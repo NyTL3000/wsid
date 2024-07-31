@@ -1,0 +1,29 @@
+{% extends "partials/base.html" %}
+{% block content %}
+{% load static %}
+<div class="p-3 mb-2 bg-dark text-white">
+<div class="row">
+    {% for dcn in products %}
+    <div class="col-lg-6">
+        <div class='container'>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4" style="background-image: url('{% static dcn.image|add:".jpg" %}');
+                    background-repeat: no-repeat;background-size:cover"> 
+                        
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{dcn.title}}</h5>
+                            <p class="card-text">Giá:{{dcn.price}}vnđ</p>
+                            <a href="/products/{{dcn.slug}}"><p class="card-text"><small class=" text-body-secondary">{{dcn.tags}}</small></p></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "partials/base.html" %}
+{% block content %}
+{% load static %}
+<div class="p-3 mb-2 bg-dark text-white">
+<h1>{{products_details.title}}</h1>
+<br>
+     <img src="{% static products_details.image|add:'.jpg' %}" class="img-fluid rounded-start" alt="...">
+<p class="info">
+     <br>
+     {{ products_details.info|linebreaksbr }} 
+    </br>
+</p>
+<h2>Read next</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4 ">
+    <div class="col">
+      <div class="card h-100 card text-bg-dark mb-3 ">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">About Page</h5>
+          <p class="card-text info">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 card text-bg-dark mb-3">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Home Page</h5>
+          <p class="card-text info">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 card text-bg-dark mb-3">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> Blog Page</h5>
+          <p class="card-text info">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "partials/base.html" %}
+{% block content %}
+{% load static %}
+{% for post in posts %}  
+<h1> {{post.title}} </h1>
+{% endfor %}
+
+<div class="container">
+  <div class="card mb-3" style="max-width: 1540px;">
+    <div class="row g-0">
+      <div class="col-md-2">
+        <img src="{%static 'images/bullshit.jpg' %}" class="img-nguy rounded-4" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h1 class="card-title">Hi everyone  </h1>
+          <p class="card-text">This is my website and its purpose is to introduce myself.Let's get started!</p>
+          <p class="card-text">Firstly,my name is Nguyen, im 14 years old and i'm studying at nbk school.I live in Hanoi-the capital of Vietnam.</p>
+          <p class="card-text">You can see some of my pictures over there to imagine my appearance. </p>
+          <p class="card-text">As you can see, i'm a boy and i have a black curly hair.</p>
+          <p class="card-text">Now, let's move on.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{%static 'images/dz2.png' %}" class="img-ngu rounded-4"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">My hobbies</h5>
+          <p class="card-text">Well, i do a lot of things in my freetime so these just are some of my freetime activities that i do the most. I usually listen to music or play games or watch tv. I often play football too. I even go to sleep when i'm bored. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{%static 'images/dz1.jpg' %}" class="img-ngu rounded-4" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">My personallity</h5>
+          <p class="card-text">Actually i'm an introvert, so i don't have many friends and i don't like making friends too.  Even i have a few friends, i still happy, alive and my friends are very good too.  </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{%static 'images/dz.jpg' %}" class="img-ngu rounded-4" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Random thoughts (my opinion) </h5>
+          <p class="card-text">Have you ever thought about there are some knowledge that school teached us but we dont need it, we dont have to use it when we grow up? Those are trash knowledge. Why we have to learn something that we won't use? Like we buy something that we'll never use it. It sucks! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %} 
