@@ -1,5 +1,6 @@
 from django.urls import path
 from commerce import views 
+from commerce.views import home
 app_name="commerce"
 
 
