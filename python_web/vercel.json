@@ -11,12 +11,20 @@
     ],
     "routes": [
         {
+            "src": "/(.*)",
+            "dest": "python_web/wsgi.py"
+        },
+        {
             "src": "/static/(.*)",
             "dest": "/static/$1"
         },
+        { 
+            "src": "/static/images/(.*)",
+            "dest": "static/images/$1" 
+        },
         {
-            "src": "/(.*)",
-            "dest": "python_web/wsgi.py"
+            "src": "/media/(.*)",
+            "dest": "media/$1"
         }
     ]
 }
