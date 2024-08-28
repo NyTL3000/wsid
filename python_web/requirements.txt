@@ -10,3 +10,4 @@ pymongo==4.4.1
 sqlparse==0.2.4
 tzdata==2023.3
 whitenoise==6.5.0
+certifi
