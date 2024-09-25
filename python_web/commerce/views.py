@@ -4,7 +4,8 @@ from .models import products_collection
 # Create your views here.
 from django.http import HttpResponse
 def home (request):
-    return  render (request, "pages/homePage.html" )
+    products = products_collection.find() 
+    return render(request, "pages/homePage.html" ,{'products': products}  )
 def about (request): 
     return render(request, "pages/aboutPage.html" )
 def products (request): 
