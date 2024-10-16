@@ -1,9 +1,10 @@
 {% extends "partials/base.html" %}
 {% block content %}
 {% load static %}
-{% for post in posts %}  
+{% for post in posts %}
 <h1> {{post.title}} </h1>
 {% endfor %}
+
 
 <!-- <div class="container">
   <div class="card mb-3" style="max-width: 1540px;">
@@ -53,66 +54,152 @@
     </div>
   </div>
 </div> -->
-<div class="container">
-  <div class="row g-0 text-center">
-    <div class="col-6 col-md-4">
-    
+<!-- <div class="container">
+    <div class="row g-0 text-center">
+      <div class="col-6 col-md-4">
+
+      </div>
+
+      <div class="col-sm-6 col-md-8">
+        <h2>EDUCATION</h2>
+        <hr>
+
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+        </style>
+       
+        <section class="design-section">
+          <div class="timeline">
+
+
+            <div class="timeline-empty">
+            </div>
+
+
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+              <h3>HTML</h3>
+              <p>Some Text</p>
+            </div>
+            <div class="timeline-component timeline-content">
+              <h3>CSS</h3>
+              <p>Some Text.</p>
+            </div>
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+              <h3>Javascript</h3>
+              <p>Some Text.</p>
+            </div>
+
+          </div>
+      </div>
+      </section>
     </div>
+  </div>
+</div> -->
+<div class="container text-center">
+  <div class="row g-2">
+    <div class="col-4">
+      <div class="p-3">
+        <div class="border border-dark rounded">
+          <img src="{%static 'images/curuahoguom.jpg' %}" class="avatar my-3" alt="...">
+          <div>
+            <h1 class="name">master oggway</h1>
+            <p class="job">khau xa tam phat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="p-3">
+        <div class="edu-timeline">
+          <h1 class="name">EDUCATION</h1>
+          <hr>
+          <style>
+            @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+          </style>
+          <!--This is the main container that contains the whole timeline.-->
+          <section class="design-section">
+            <div class="timeline">
 
-    <div class="col-sm-6 col-md-8">
-      <h2>EDUCATION</h2>
-      <hr>
-      
-<style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
-<!--This is the main container that contains the whole timeline.-->
-<section class="design-section">
-<div class="timeline">
-
-          <!--Well, The reason for this div is to fill space. 
+              <!--Well, The reason for this div is to fill space. 
 This space is technically used for keeping dates, 
 but I didn't find the need for dates. However, I'll provide 
 you the styling for dates, so that you can use it if you 
 wanted to.-->
-                  <div class="timeline-empty">
-                  </div>
+              <div class="timeline-empty">
+              </div>
 
-<!--This is the class where the timeline graphics are 
+              <!--This is the class where the timeline graphics are 
 housed in. Note that we have timeline-circle 
 here for that pointer in timeline.-->
 
-               <div class="timeline-middle">
-                   <div class="timeline-circle"></div>
-               </div>
-               <div class="timeline-component timeline-content">
-                <h3>HTML</h3>
-                <p>Some Text</p>
-           </div>
-                <div class="timeline-component timeline-content">
-                         <h3>CSS</h3>
-                         <p>Some Text.</p>
-                </div>
-                <div class="timeline-middle">
-                    <div class="timeline-circle"></div>
-                </div>
-                <div class="timeline-empty">
-                </div>
+              <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+              </div>
+              <div class="timeline-component timeline-content">
+                <h3>Nothing special actually</h3>
+                <p>Some "Text"</p>
+              </div>
+              
+              <div class="timeline-empty">
 
-                <div class="timeline-empty">
-                </div>
+              </div>
+              <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+              </div>
+              <div class="timeline-component timeline-content">
+                <h3>ncie</h3>
+              </div>
+              <div class="timeline-empty">
+              </div>
+              
+              <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+              </div>
+              <div class=" timeline-component timeline-content">
+                <h3>wsid</h3>
+                <p>No "Text"</p>
+              </div>
 
-               <div class="timeline-middle">
-                   <div class="timeline-circle"></div>
-               </div>
-               <div class=" timeline-component timeline-content">
-                <h3>Javascript</h3>
-                <p>Some Text.</p>
-           </div>
-
-       </div>
-    </div> 
-</section>
+            </div>
+        </div>
+        </section>
+      </div>
     </div>
   </div>
+  <div class="col-4">
+    <div class="p-3">
+      <div class="border border-dark rounded">
+        <div>
+          <h1 class="name">Contact</h1>
+          <hr>
+          <p class="job"></p>
+          <h1 class="name">About me</h1>
+          <p class="job"></p>
+          <hr>
+          <h1 class="name">Skills</h1>
+          <p class="job"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="p-3">Custom column padding</div>
+  </div>
 </div>
-
-{% endblock %} 
+</div>
+{% endblock %}

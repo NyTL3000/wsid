@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 <div class="p-3 mb-2 bg-dark text-white">
-<h1>{{products_details.title}}</h1>
+<h1 class="title">{{products_details.title}}</h1>
 <br>
      <img src="{% static products_details.image|add:'.jpg' %}" class="img-fluid rounded-start" alt="...">
 <p class="info">
