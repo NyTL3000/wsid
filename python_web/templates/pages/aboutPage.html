@@ -110,9 +110,9 @@
     </div>
   </div>
 </div> -->
-<div class="container text-center">
+<div class="container ">
   <div class="row g-2">
-    <div class="col-4">
+    <div class="col-4 text-center">
       <div class="p-3">
         <div class="border border-dark rounded">
           <img src="{%static 'images/curuahoguom.jpg' %}" class="avatar my-3" alt="...">
@@ -123,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-8 text-center">
       <div class="p-3">
         <div class="edu-timeline">
           <h1 class="name">EDUCATION</h1>
@@ -182,40 +182,96 @@ here for that pointer in timeline.-->
       </div>
     </div>
   </div>
-  <div class="col-4">
-    <div class="p-3">
-      <div class="border border-dark rounded">
-        <div class="justify-content-start">
-          <h1 class="name">Contact</h1>
-          <hr>
-          <i class="bi bi-telephone">
-            ring ring
-          </i>
-          <br>
-          <i class="bi bi-geo-alt">
-            Hanoi
-          </i>
-          <br>
-          <i class="bi bi-at">
-            nhatisveryhandsome@gmail.com
-          </i>
-          <br>
-          <hr>
-          <p class="job"></p>
-          <h1 class="name">About me</h1>
-          <p class="job"></p>
-          <hr>
-          <h1 class="name">Skills</h1>
-          <p class="job"></p>
+  <div class="row g-2">
+    <div class="col-4">
+      <div class="p-3">
+        <div class="border border-dark rounded">
+          <div class="justify-content-start">
+            <h1 class="name text-center">Contact</h1>
+            <hr>
+            <i class="bi bi-telephone">
+              ring ring
+            </i>
+            <br>
+            <i class="bi bi-geo-alt">
+              Hanoi
+            </i>
+            <br>
+            <i class="bi bi-at">
+              nhatisveryhandsome@gmail.com
+            </i>
+            <br>
+            <h1 class="name text-center">About me</h1>
+            <hr>
+            <p class="job text-center">hi,my name is Nguyen, im 14 years old and i'm studying at nbk school.I live in
+              Hanoi-the capital of Vietnam.</p>
+
+
+            <h1 class="name text-center">Skills</h1>
+            <hr>
+            <p class="job text-center">i have some skills yeah that's all</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-8">
-    <div class="p-3">
-      Custom column padding
+    <div class="col-8">
+      <div class="p-3">
+        <h1 class="text-center">Experience</h1>
+        <hr>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+        </style>
+        <!--This is the main container that contains the whole timeline.-->
+        <section class="design-section">
+          <div class="timeline text-center">
+
+            <!--Well, The reason for this div is to fill space. 
+This space is technically used for keeping dates, 
+but I didn't find the need for dates. However, I'll provide 
+you the styling for dates, so that you can use it if you 
+wanted to.-->
+            <div class="timeline-empty">
+            </div>
+
+            <!--This is the class where the timeline graphics are 
+housed in. Note that we have timeline-circle 
+here for that pointer in timeline.-->
+
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+              <h3>Nothing special actually</h3>
+              <p>Some "Text"</p>
+            </div>
+
+            <div class="timeline-empty">
+
+            </div>
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+              <h3>ncie</h3>
+              <p>Khẩu xà tâm phật</p>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-middle">
+              <div class="timeline-circle"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+              <h3>wsid</h3>
+              <p>No "Text"</p>
+            </div>
+
+          </div>
+      </div>
+      </section>
     </div>
   </div>
+</div>
 </div>
 </div>
 {% endblock %}
