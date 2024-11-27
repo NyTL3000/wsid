@@ -114,6 +114,7 @@ height: fit-content;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  
 }
 
 .timeline-content {
@@ -150,6 +151,7 @@ height: fit-content;
     width: 3px;
     height: 100%;
     left: -100px;
+    
   }
   .main-middle {
     opacity: 0;
@@ -167,10 +169,12 @@ height: fit-content;
   }
 }
 .avatar{
-  width:300px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 1/1;
   border-radius: 50%;
-  height: 300px;
-  
+  object-fit: cover;
 }
 .name{
 color: black;
